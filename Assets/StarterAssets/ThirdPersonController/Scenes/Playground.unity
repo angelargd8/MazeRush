@@ -5253,8 +5253,20 @@ MonoBehaviour:
   - {fileID: 1846498503}
   - {fileID: 493609695}
   waitTime: 1
+  patrolSpeed: 3.5
+  chaseSpeed: 6
+  viewRadius: 10
+  viewAngle: 180
+  rememberTime: 1.25
+  eyeHeight: 1.6
+  obstacleMask:
+    serializedVersion: 2
+    m_Bits: 0
+  targetMask:
+    serializedVersion: 2
+    m_Bits: 0
   attackDistance: 1.6
-  loseDistance: 8
+  loseDistance: 20
 --- !u!195 &1138872290
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -7576,6 +7588,7 @@ GameObject:
   - component: {fileID: 1706848119}
   - component: {fileID: 1706848118}
   - component: {fileID: 1706848120}
+  - component: {fileID: 1706848121}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -7697,8 +7710,20 @@ MonoBehaviour:
   - {fileID: 1300759236}
   - {fileID: 331241699}
   waitTime: 1
+  patrolSpeed: 3.5
+  chaseSpeed: 6
+  viewRadius: 10
+  viewAngle: 180
+  rememberTime: 1.25
+  eyeHeight: 1.6
+  obstacleMask:
+    serializedVersion: 2
+    m_Bits: 0
+  targetMask:
+    serializedVersion: 2
+    m_Bits: 0
   attackDistance: 1.6
-  loseDistance: 8
+  loseDistance: 20
 --- !u!195 &1706848117
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -7767,6 +7792,21 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 2, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1706848121
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1706848111}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b7b59430402dc14596af6385c44d570, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  jumpHeight: 1.5
+  jumpDuration: 0.6
+  jumpInterval: 7
 --- !u!1 &1737472796
 GameObject:
   m_ObjectHideFlags: 0
@@ -8121,6 +8161,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   maxLives: 3
   respawnPoint: {fileID: 1432605755}
+  gameManager: {fileID: 0}
   TextLives: {fileID: 1737472798}
 --- !u!1 &1764214107
 GameObject:
@@ -8408,8 +8449,20 @@ MonoBehaviour:
   - {fileID: 1617460632}
   - {fileID: 2098896955}
   waitTime: 1
+  patrolSpeed: 3.5
+  chaseSpeed: 6
+  viewRadius: 10
+  viewAngle: 180
+  rememberTime: 1.25
+  eyeHeight: 1.6
+  obstacleMask:
+    serializedVersion: 2
+    m_Bits: 0
+  targetMask:
+    serializedVersion: 2
+    m_Bits: 0
   attackDistance: 1.6
-  loseDistance: 8
+  loseDistance: 20
 --- !u!195 &1808968944
 NavMeshAgent:
   m_ObjectHideFlags: 0

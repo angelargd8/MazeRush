@@ -255,4 +255,7 @@ public class EnemyBehavior : MonoBehaviour
         patrolCoroutine = null;
     }
 
+    public Transform Objective => objective;
+    public bool IsChasing => currentState == EnemyState.Chase;
+
 }
