@@ -6,6 +6,7 @@ public class PlayerLives : MonoBehaviour
 {
     [SerializeField] int maxLives = 3;
     [SerializeField] Transform respawnPoint;
+    [SerializeField] GameManager gameManager;
     public Text TextLives;
 
 
@@ -31,6 +32,7 @@ public class PlayerLives : MonoBehaviour
 
         if (Lives <= 0)
         {
+            gameManager.finished = true;
             Debug.Log("Game Over");
             //se puede poner una UI o que se termine xd
         }
