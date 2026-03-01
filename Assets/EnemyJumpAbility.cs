@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.AI;
+using System.Collections;
 
 public class EnemyJumpAbility : MonoBehaviour
 {
@@ -35,7 +36,7 @@ public class EnemyJumpAbility : MonoBehaviour
         }
     }
 
-    private System.Collections.IEnumerator Jump()
+    private IEnumerator Jump()
     {
         isJumping = true;
 
@@ -47,7 +48,7 @@ public class EnemyJumpAbility : MonoBehaviour
         {
             float normalized = time / jumpDuration;
 
-            // curva parabolica par a el salto
+            
             float height = 4f * jumpHeight * normalized * (1f - normalized);
 
             transform.position = startPosition + Vector3.up * height;

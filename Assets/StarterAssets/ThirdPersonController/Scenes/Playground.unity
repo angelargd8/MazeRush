@@ -152,6 +152,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89233ce36ecd56f49b3e33f8ce4e388f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Coin
+  CoinSFX: {fileID: 8300000, guid: 7a592169a3db9f74884342d0f2122e7e, type: 3}
   rotationSpeed: 180
 --- !u!54 &21650707
 Rigidbody:
@@ -304,6 +305,51 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1165608982}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &59261590
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 59261592}
+  - component: {fileID: 59261591}
+  m_Layer: 0
+  m_Name: LevelManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &59261591
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 59261590}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c67cb80d01b33ce41b853509105bba1b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  ambienceClip: {fileID: 8300000, guid: 75d79231014d2ea40a41bc4909a4d312, type: 3}
+--- !u!4 &59261592
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 59261590}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 9.80539, y: 0.5, z: 18.30009}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &62532448
 GameObject:
   m_ObjectHideFlags: 0
@@ -337,6 +383,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89233ce36ecd56f49b3e33f8ce4e388f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Coin
+  CoinSFX: {fileID: 8300000, guid: 7a592169a3db9f74884342d0f2122e7e, type: 3}
   rotationSpeed: 180
 --- !u!54 &62532450
 Rigidbody:
@@ -1102,6 +1149,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89233ce36ecd56f49b3e33f8ce4e388f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Coin
+  CoinSFX: {fileID: 8300000, guid: 7a592169a3db9f74884342d0f2122e7e, type: 3}
   rotationSpeed: 180
 --- !u!54 &200653207
 Rigidbody:
@@ -1990,6 +2038,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89233ce36ecd56f49b3e33f8ce4e388f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Coin
+  CoinSFX: {fileID: 8300000, guid: 7a592169a3db9f74884342d0f2122e7e, type: 3}
   rotationSpeed: 180
 --- !u!54 &489341197
 Rigidbody:
@@ -2254,6 +2303,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89233ce36ecd56f49b3e33f8ce4e388f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Coin
+  CoinSFX: {fileID: 8300000, guid: 7a592169a3db9f74884342d0f2122e7e, type: 3}
   rotationSpeed: 180
 --- !u!54 &538323856
 Rigidbody:
@@ -2473,6 +2523,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89233ce36ecd56f49b3e33f8ce4e388f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Coin
+  CoinSFX: {fileID: 8300000, guid: 7a592169a3db9f74884342d0f2122e7e, type: 3}
   rotationSpeed: 180
 --- !u!54 &552326939
 Rigidbody:
@@ -2760,6 +2811,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89233ce36ecd56f49b3e33f8ce4e388f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Coin
+  CoinSFX: {fileID: 8300000, guid: 7a592169a3db9f74884342d0f2122e7e, type: 3}
   rotationSpeed: 180
 --- !u!54 &590395150
 Rigidbody:
@@ -3517,6 +3569,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89233ce36ecd56f49b3e33f8ce4e388f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Coin
+  CoinSFX: {fileID: 8300000, guid: 7a592169a3db9f74884342d0f2122e7e, type: 3}
   rotationSpeed: 180
 --- !u!54 &747587915
 Rigidbody:
@@ -4070,6 +4123,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89233ce36ecd56f49b3e33f8ce4e388f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Coin
+  CoinSFX: {fileID: 8300000, guid: 7a592169a3db9f74884342d0f2122e7e, type: 3}
   rotationSpeed: 180
 --- !u!54 &862809921
 Rigidbody:
@@ -4458,6 +4512,247 @@ LightProbeGroup:
   - {x: 7.1518564, y: 2.7763042, z: -11.2319765}
   - {x: 8.993203, y: 2.3566551, z: -8.796325}
   m_Dering: 1
+--- !u!1 &957424691
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 957424694}
+  - component: {fileID: 957424693}
+  - component: {fileID: 957424692}
+  - component: {fileID: 957424695}
+  m_Layer: 0
+  m_Name: AudioManage
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &957424692
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 957424691}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 607929505369150298, guid: 4a75588ad5be81c429c83a99fa6bdd79, type: 2}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!82 &957424693
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 957424691}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: -2578255726570861018, guid: 4a75588ad5be81c429c83a99fa6bdd79, type: 2}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!4 &957424694
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 957424691}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 9.80539, y: 0.5, z: 18.30009}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &957424695
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 957424691}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ae687cf3cd8a8746b4e7521255ea9be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AudioManager
+  audioMixer: {fileID: 24100000, guid: 4a75588ad5be81c429c83a99fa6bdd79, type: 2}
 --- !u!1 &969802890
 GameObject:
   m_ObjectHideFlags: 0
@@ -4491,6 +4786,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89233ce36ecd56f49b3e33f8ce4e388f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Coin
+  CoinSFX: {fileID: 8300000, guid: 7a592169a3db9f74884342d0f2122e7e, type: 3}
   rotationSpeed: 180
 --- !u!54 &969802892
 Rigidbody:
@@ -4864,6 +5160,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89233ce36ecd56f49b3e33f8ce4e388f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Coin
+  CoinSFX: {fileID: 8300000, guid: 7a592169a3db9f74884342d0f2122e7e, type: 3}
   rotationSpeed: 180
 --- !u!54 &1049298829
 Rigidbody:
@@ -5182,6 +5479,7 @@ GameObject:
   - component: {fileID: 1138872288}
   - component: {fileID: 1138872287}
   - component: {fileID: 1138872286}
+  - component: {fileID: 1138872295}
   m_Layer: 0
   m_Name: Enemy (2)
   m_TagString: Untagged
@@ -5384,6 +5682,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1138872295
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1138872285}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a33a720c7885e948887e026115d6761, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AudioEnemyAbility
+  enemySFX: {fileID: 8300000, guid: 7fc7d7a0e4204924596586f964fffaf9, type: 3}
 --- !u!1 &1151586118
 GameObject:
   m_ObjectHideFlags: 0
@@ -5472,6 +5783,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89233ce36ecd56f49b3e33f8ce4e388f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Coin
+  CoinSFX: {fileID: 8300000, guid: 7a592169a3db9f74884342d0f2122e7e, type: 3}
   rotationSpeed: 180
 --- !u!54 &1161969889
 Rigidbody:
@@ -5924,6 +6236,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89233ce36ecd56f49b3e33f8ce4e388f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Coin
+  CoinSFX: {fileID: 8300000, guid: 7a592169a3db9f74884342d0f2122e7e, type: 3}
   rotationSpeed: 180
 --- !u!54 &1262029862
 Rigidbody:
@@ -6466,6 +6779,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89233ce36ecd56f49b3e33f8ce4e388f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Coin
+  CoinSFX: {fileID: 8300000, guid: 7a592169a3db9f74884342d0f2122e7e, type: 3}
   rotationSpeed: 180
 --- !u!54 &1362593028
 Rigidbody:
@@ -6880,6 +7194,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89233ce36ecd56f49b3e33f8ce4e388f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Coin
+  CoinSFX: {fileID: 8300000, guid: 7a592169a3db9f74884342d0f2122e7e, type: 3}
   rotationSpeed: 180
 --- !u!54 &1438421384
 Rigidbody:
@@ -7256,6 +7571,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89233ce36ecd56f49b3e33f8ce4e388f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Coin
+  CoinSFX: {fileID: 8300000, guid: 7a592169a3db9f74884342d0f2122e7e, type: 3}
   rotationSpeed: 180
 --- !u!54 &1589345377
 Rigidbody:
@@ -7919,6 +8235,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89233ce36ecd56f49b3e33f8ce4e388f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Coin
+  CoinSFX: {fileID: 8300000, guid: 7a592169a3db9f74884342d0f2122e7e, type: 3}
   rotationSpeed: 180
 --- !u!54 &1759054074
 Rigidbody:
@@ -8378,6 +8695,7 @@ GameObject:
   - component: {fileID: 1808968942}
   - component: {fileID: 1808968941}
   - component: {fileID: 1808968940}
+  - component: {fileID: 1808968949}
   m_Layer: 0
   m_Name: Enemy (1)
   m_TagString: Untagged
@@ -8580,6 +8898,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1808968949
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1808968939}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73aa7b38ace558f43aa3a30f22a090ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyGrowAbility
+  growMultiplier: 1.5
+  growSpeed: 6
 --- !u!4 &1812522707 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1856478557988811146, guid: 466621a4836aa504c87c15d88722d465, type: 3}
@@ -8618,6 +8950,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89233ce36ecd56f49b3e33f8ce4e388f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Coin
+  CoinSFX: {fileID: 8300000, guid: 7a592169a3db9f74884342d0f2122e7e, type: 3}
   rotationSpeed: 180
 --- !u!54 &1824049683
 Rigidbody:
@@ -8803,6 +9136,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89233ce36ecd56f49b3e33f8ce4e388f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Coin
+  CoinSFX: {fileID: 8300000, guid: 7a592169a3db9f74884342d0f2122e7e, type: 3}
   rotationSpeed: 180
 --- !u!54 &1884574054
 Rigidbody:
@@ -9077,6 +9411,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89233ce36ecd56f49b3e33f8ce4e388f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Coin
+  CoinSFX: {fileID: 8300000, guid: 7a592169a3db9f74884342d0f2122e7e, type: 3}
   rotationSpeed: 180
 --- !u!1 &1943680175
 GameObject:
@@ -9244,6 +9579,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89233ce36ecd56f49b3e33f8ce4e388f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Coin
+  CoinSFX: {fileID: 8300000, guid: 7a592169a3db9f74884342d0f2122e7e, type: 3}
   rotationSpeed: 180
 --- !u!54 &1950605170
 Rigidbody:
@@ -9542,6 +9878,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89233ce36ecd56f49b3e33f8ce4e388f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Coin
+  CoinSFX: {fileID: 8300000, guid: 7a592169a3db9f74884342d0f2122e7e, type: 3}
   rotationSpeed: 180
 --- !u!54 &2007541666
 Rigidbody:
@@ -9696,6 +10033,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89233ce36ecd56f49b3e33f8ce4e388f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Coin
+  CoinSFX: {fileID: 8300000, guid: 7a592169a3db9f74884342d0f2122e7e, type: 3}
   rotationSpeed: 180
 --- !u!54 &2012755331
 Rigidbody:
@@ -10411,6 +10749,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89233ce36ecd56f49b3e33f8ce4e388f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Coin
+  CoinSFX: {fileID: 8300000, guid: 7a592169a3db9f74884342d0f2122e7e, type: 3}
   rotationSpeed: 180
 --- !u!54 &2138972516
 Rigidbody:
@@ -11093,3 +11432,5 @@ SceneRoots:
   - {fileID: 185325909}
   - {fileID: 1165608982}
   - {fileID: 736878081}
+  - {fileID: 59261592}
+  - {fileID: 957424694}
