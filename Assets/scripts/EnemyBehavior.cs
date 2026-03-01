@@ -10,9 +10,13 @@ public class EnemyBehavior : MonoBehaviour
     [Header("Target")]
     [SerializeField] Transform objective;
 
+
     [Header("Patrol")]
     [SerializeField] List<Transform> waypoints;
     [SerializeField] float waitTime = 3.0f;
+
+    [Header("Animation")]
+    [SerializeField] Animator anim;
 
     [Header("Speeds")]
     [SerializeField] float patrolSpeed = 3.5f;
