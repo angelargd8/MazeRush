@@ -11,22 +11,22 @@ public class EnemyJumpAbility : MonoBehaviour
     private bool isJumping = false;
 
     private NavMeshAgent agent;
-    private EnemyBehavior brain;
+    private EnemyBehavior behavior;
 
     private Vector3 startPosition;
 
     private void Awake()
     {
         agent = GetComponent<NavMeshAgent>();
-        brain = GetComponent<EnemyBehavior>();
+        behavior = GetComponent<EnemyBehavior>();
     }
 
     private void Update()
     {
-        if (brain == null || agent == null) return;
+        if (behavior == null || agent == null) return;
 
         // Solo salta si esta persiguiendo
-        if (!brain.IsChasing) return;
+        if (!behavior.IsChasing) return;
 
         if (Time.time >= nextJumpTime && !isJumping)
         {
