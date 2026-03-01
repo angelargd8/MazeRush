@@ -61,27 +61,27 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\6000.3.9f1\Editor\Data\Tools\BuildPipeline\Unity.SourceGenerators\Unity.UIToolkit.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\EnemyTouchDamage.cs" />
-    <Compile Include="Assets\PlayerLives.cs" />
+    <Compile Include="Assets\scripts\EnemyAudioAbility.cs" />
     <Compile Include="Assets\StarterAssets\Mobile\Scripts\VirtualInputs\UIVirtualTouchZone.cs" />
     <Compile Include="Assets\StarterAssets\Mobile\Scripts\VirtualInputs\UIVirtualJoystick.cs" />
-    <Compile Include="Assets\WallDisappear.cs" />
+    <Compile Include="Assets\scripts\EnemyTouchDamage.cs" />
+    <Compile Include="Assets\scripts\WallDisappear.cs" />
     <Compile Include="Assets\StarterAssets\Mobile\Scripts\Utilities\MobileDisableAutoSwitchControls.cs" />
-    <Compile Include="Assets\EnemyGrowAbility.cs" />
     <Compile Include="Assets\StarterAssets\ThirdPersonController\Scripts\ThirdPersonController.cs" />
-    <Compile Include="Assets\LevelManager.cs" />
+    <Compile Include="Assets\scripts\PlayerLives.cs" />
     <Compile Include="Assets\StarterAssets\Mobile\Scripts\VirtualInputs\UIVirtualButton.cs" />
     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
-    <Compile Include="Assets\GameManager.cs" />
-    <Compile Include="Assets\EnemyReset.cs" />
-    <Compile Include="Assets\EnemyJumpAbility.cs" />
+    <Compile Include="Assets\scripts\EnemyJumpAbility.cs" />
+    <Compile Include="Assets\scripts\Coin.cs" />
+    <Compile Include="Assets\scripts\EnemyGrowAbility.cs" />
+    <Compile Include="Assets\scripts\LevelManager.cs" />
     <Compile Include="Assets\StarterAssets\Mobile\Scripts\CanvasInputs\UICanvasControllerInput.cs" />
+    <Compile Include="Assets\scripts\GameManager.cs" />
+    <Compile Include="Assets\scripts\EnemyReset.cs" />
     <Compile Include="Assets\StarterAssets\ThirdPersonController\Scripts\BasicRigidBodyPush.cs" />
-    <Compile Include="Assets\Coin.cs" />
-    <Compile Include="Assets\EnemyAudioAbility.cs" />
-    <Compile Include="Assets\EnemyBehavior.cs" />
+    <Compile Include="Assets\scripts\EnemyBehavior.cs" />
     <Compile Include="Assets\StarterAssets\InputSystem\StarterAssetsInputs.cs" />
-    <Compile Include="Assets\AudioManager.cs" />
+    <Compile Include="Assets\scripts\AudioManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\StarterAssets\license.txt" />
