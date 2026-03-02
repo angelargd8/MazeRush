@@ -2,6 +2,7 @@ using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.AI;
+using UnityEngine.Rendering;
 
 public class EnemyBehavior : MonoBehaviour
 {
@@ -19,7 +20,7 @@ public class EnemyBehavior : MonoBehaviour
     [SerializeField] Animator anim;
 
     [Header("Speeds")]
-    [SerializeField] float patrolSpeed = 3.5f;
+    [SerializeField] float patrolSpeed = 3.0f;
     [SerializeField] float chaseSpeed = 6f;
 
     [Header("Vision")]
@@ -40,6 +41,10 @@ public class EnemyBehavior : MonoBehaviour
     [SerializeField] float attackDistance = 1.6f;
     [SerializeField] float loseDistance = 20.0f;
 
+    private float attackRange = 2.0f;
+    private float attackCooldown = 1.0f;
+    private float lastAttackTime = 0.0f;
+
     private int wpIndex = 0;
     private EnemyState currentState = EnemyState.Patrol;
     private Coroutine patrolCoroutine;
@@ -55,6 +60,7 @@ public class EnemyBehavior : MonoBehaviour
 
     private void Start()
     {
+        
         if (waypoints == null || waypoints.Count == 0) return;
 
         agent.isStopped = true;
@@ -66,6 +72,8 @@ public class EnemyBehavior : MonoBehaviour
 
     private void Update()
     {
+        anim.SetFloat("Speed", agent.velocity.magnitude); // velocity.magnitude es la velocidad en la que me estoy moviendo, speed es la maxima
+
         switch (currentState)
         {
             case EnemyState.Patrol:
@@ -151,24 +159,57 @@ public class EnemyBehavior : MonoBehaviour
 
         float dist = Vector3.Distance(transform.position, objective.position);
 
-        // si se aleja, vuelve a perseguir o patrullar
-        if (dist > attackDistance)
-        {
-            bool seesNow = LookForObjective();
+        //// si se aleja, vuelve a perseguir o patrullar
+        //if (dist > attackDistance)
+        //{
+        //    bool seesNow = LookForObjective();
 
-            if (dist > loseDistance || (!seesNow && !SawRecently()))
-                ReturnToPatrol();
-            else
-                currentState = EnemyState.Chase;
+        //    if (dist > loseDistance || (!seesNow && !SawRecently()))
+        //        ReturnToPatrol();
+        //    else
+        //        currentState = EnemyState.Chase;
 
-            return;
-        }
+        //    return;
+        //}
 
         agent.isStopped = true;
 
         // solo ver al jugador
         Vector3 lookPos = new Vector3(objective.position.x, transform.position.y, objective.position.z);
-        transform.LookAt(lookPos);
+        
+        //transform.LookAt(lookPos);
+
+        if (Time.time > lastAttackTime + attackCooldown)
+        {
+            transform.LookAt(lookPos);
+            agent.stoppingDistance = attackRange;
+            agent.SetDestination(objective.position);
+            lastAttackTime = Time.time;
+
+            anim.SetTrigger("Attack");
+
+        }
+        else
+        {
+            // si se aleja, vuelve a perseguir o patrullar
+            if (dist > attackDistance)
+            {
+                bool seesNow = LookForObjective();
+
+                if (dist > loseDistance || (!seesNow && !SawRecently()))
+                    ReturnToPatrol();
+                else
+                    currentState = EnemyState.Chase;
+
+                return;
+            }
+
+            agent.isStopped = true;
+        }
+
+        
+
+
     }
 
     private void ReturnToPatrol()

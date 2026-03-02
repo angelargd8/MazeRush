@@ -7,6 +7,8 @@ public class EnemyJumpAbility : MonoBehaviour
     [SerializeField] float jumpHeight = 1.5f;
     [SerializeField] float jumpDuration = 0.6f;
     [SerializeField] float jumpInterval = 7f;
+    [Header("Animation")]
+    [SerializeField] Animator anim;
 
     private float nextJumpTime = 0f;
     private bool isJumping = false;
@@ -39,6 +41,8 @@ public class EnemyJumpAbility : MonoBehaviour
     private IEnumerator Jump()
     {
         isJumping = true;
+        anim.SetTrigger("Jump");
+
 
         startPosition = transform.position;
 
@@ -46,6 +50,7 @@ public class EnemyJumpAbility : MonoBehaviour
 
         while (time < jumpDuration)
         {
+            
             float normalized = time / jumpDuration;
 
             
@@ -54,6 +59,7 @@ public class EnemyJumpAbility : MonoBehaviour
             transform.position = startPosition + Vector3.up * height;
 
             time += Time.deltaTime;
+            
             yield return null;
         }
 
